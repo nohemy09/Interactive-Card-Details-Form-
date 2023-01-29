@@ -2,15 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon-32x32.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Interactive Card Details Form</title>
   </head>
   <body>
-    <header>
-      <h1>hola mundo</h1>
-    </header>
-    <div id="app"></div>
+
+    <div class="main">
+      <div class="nav">
+        <img src="./assets/images/bg-main-desktop.png">
+      </div>
+      <div class="bg-front">
+        <img src="./assets/images/bg-card-front.png">
+        <div class="number">0000 0000 0000 0000</div>
+        <div class="name">Full Name</div>
+        <span class="dot"></span>
+        <span class="dot2"></span>
+        <div class="enddate">
+          <span id="ex-mm">00</span >/<span id="ex-yy">00</span>
+        </div>
+      </div>
+      <div class="bg-back">
+        <img src="./assets/images/bg-card-back.png">
+        <div class="cvc">
+          <span class="cvc">0000</span>
+        </div>
+      </div>
+      <form class="card-info">
+        <div class="name-card">
+          <label for=""> Cardholder Name</label>
+          <input type="text" id="name">
+          <label>Card Number</label>
+          <input type="text" id="card-number">
+          <span id="w-format"></span>
+        </div>
+        <div class="exp-date">
+          <label>Exp. date (MM/YY)</label>
+          <input id="mm" type="number" placeholder="MM">
+          <input id="YY" type="number" placeholder="YY">
+          <span id="w-blank"></span>
+        </div>
+        <div class="cvc">
+          <label for="">cvc</label><br>
+          <input id="cvc" type="number" placeholder="e.g. 123"><br>
+          <span id="w-blankc"></span>
+        </div>
+      </form>
+      <div class="confirm">
+        <input  id="submit" type="submit" value="Confirm">
+      </div>
+      <figure class="thank">
+        <img src="./images/icon-complete.svg" alt=""><br>
+        <span class="s1">Think You</span><br>
+        <span class="s">with added your card details</span>
+      </figure>
+    </div>
+
+
+    <!--Javascript-->
     <script type="module" src="./JS/main.js"></script>
   </body>
 </html>
