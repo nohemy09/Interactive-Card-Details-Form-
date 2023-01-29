@@ -1,8 +1,150 @@
+// Variables colores
+$Linear-gradient:(active input border) hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+$Red:(input errors) hsl(0, 100%, 66%);
+$White: hsl(0, 0%, 100%);
+$Light-grayish-violet: hsl(270, 3%, 87%);
+$Dark-grayish-violet: hsl(279, 6%, 55%);
+$Very-dark-violet: hsl(278, 68%, 11%);
+
+
 *{
   margin: 0;
   padding: 0;
 }
 
-h1{
-  color: pink;
+body{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+// Color placeholder
+::placeholder{
+  color: $Dark-grayish-violet;
+  font-weight: 600;
+}
+
+.main{
+  display: flex;
+}
+
+.nav{
+  border: 1px solid;
+  width: 35%;
+}
+ 
+
+ .bg-front{
+  position: absolute;
+  top: 15%;
+  left: 13%;
+ }
+
+ .logo{
+  position: absolute;
+  left: 15px;
+  top: 10px;
+ }
+
+ .number{
+  position: absolute;
+  top: 130px;
+  left: 20px;
+  color: $White;
+  font-size: 1.7rem;
+  letter-spacing: 4.8px;
+  font-family: sans-serif;
+ }
+
+ .name{
+  position: absolute;
+  top: 199px;
+  left: 20px;
+  color: $White;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+ }
+
+ .enddate{
+  position: absolute;
+  left: 340px;
+  bottom: 33px;
+  color: $White;
+  font-size: 1.3rem;
+ }
+
+ .card-back{
+  position: absolute;
+  left: 255px;
+  top: 350px;
+ }
+
+ .cvc1{
+  color: $White;
+  position: absolute;
+  top: 459px;
+  left: 620px;
+  
+ }
+
+ .card-info{
+  display: block;
+  position: relative;
+  left:24%;
+  margin-top: 13%;
+  height: 700px;
+  width: 50%;
+  letter-spacing: 1.75px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+ }
+
+ .input-name,
+ .input-number,
+ .input-cvc{
+  width: 50%;
+  height: 40px;
+  border-radius: 10px;
+  border: solid 2px;
+  border-color: $Light-grayish-violet;
+  
+}
+
+.mm,
+.yy{
+  width: 23.2%;
+  height: 40px;
+  margin-right: 1rem;
+  border-radius: 10px;
+  border: solid 2px;
+  border-color: $Light-grayish-violet;
+}
+
+.btn{
+  background-color: $Very-dark-violet;
+  color: $White;
+  margin-top: 2rem;
+  border-radius: 10px;
+  width: 51%;
+  height: 40px;
+}
+
+.thank {
+	display: none;
+	width: 50%;
+	height: 450px;
+	margin-top: 5%;
+	text-align: center;
+}
+
+.s1 {
+  position: relative;
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+}
+.s { 
+  color: black;
+  font-size: 20px;
+  opacity: 0.8;
+  font-weight: 600;
 }
